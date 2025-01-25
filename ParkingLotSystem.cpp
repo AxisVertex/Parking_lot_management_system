@@ -117,7 +117,7 @@ void ParkingLotSystem::DisplayParkingLot() {
 
     // add the visual for the queue line here
 
-    std::cout << "  ——————————————         ——————————————" << std::endl;
+    std::cout << "   -------------         --------------" << std::endl;
     std::cout << "  |                                   |" << std::endl;
 
     for (int row = 3; row >= 0; row--) {
@@ -131,21 +131,21 @@ void ParkingLotSystem::DisplayParkingLot() {
         if (row == 2)
             std::cout << "  |                                   |" << std::endl;
         else if (row == 3 || row == 1)
-            std::cout << "  |  |—————————————————————————————|  |" << std::endl;
+            std::cout << "  |  |-----------------------------|  |" << std::endl;
 
     }
 
     std::cout << "  |                                   |" << std::endl;
-    std::cout << "  —————————————————————————————————————" << std::endl;
+    std::cout << "   ------------------------------------" << std::endl;
 
     std::cout << "Vehicles in queue line: [" << inQueue << "/10]" << std::endl;
 
 }
 
 void ParkingLotSystem::DisplayMenu() {
-    std::cout << "—————————————————————————————————————————" << std::endl;
+    std::cout << "-----------------------------------------" << std::endl;
     std::cout << "Welcome to Parking Lot Management System!" << std::endl;
-    std::cout << "—————————————————————————————————————————" << std::endl;
+    std::cout << "-----------------------------------------" << std::endl;
 
     std::cout << "Choose an option: " << std::endl;
     std::cout << "[1] Assign a vehicle to the nearest spot." << std::endl;
